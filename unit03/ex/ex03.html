@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div > p{
+			color: red;
+		}
+		div + p{
+			color: green;
+		}
+		div ~ p{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>Thẻ p thứ 1 trong div</p>
+		<p>Thẻ p thứ 1 trong div</p>
+		<span>
+			<p>Thẻ p thứ 3 trong div</p>
+		</span>
+	</div>
+	<p>Thẻ p thứ div trong 1</p>
+	<p>Thẻ p thứ div trong 2</p>
+</body>
+</html>

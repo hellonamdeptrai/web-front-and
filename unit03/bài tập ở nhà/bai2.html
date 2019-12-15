@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 2</title>
+	<style>
+		body{
+			background-image: url(image/tuyet.jpg);
+		}
+		#center{
+			text-align: center;
+		}
+		#web{
+			width: 80%;
+			height: 100%;
+			display: inline-block;
+			border: solid;
+			border-color: white;
+		}
+		#anhbia{
+			width: 100%;
+			height: 500px;
+			background-image: url(image/123.jpg);
+			background-size: 100% 506px;
+		}
+		#menu{
+			width: 100%;
+			height: 32px;
+			background-image: url(image/nav.gif);
+		}
+		.chumenu{
+			width: 100px;
+			height: 32px;
+			font-family: Arial;
+			font-size: 12px;
+			color: orange;
+			text-align: center;
+			line-height: 32px;
+			float: left;
+		}
+		.chumenu:hover{
+			width: 100px;
+			height: 32px;
+			font-family: Arial;
+			font-size: 12px;
+			color: white;
+			text-align: center;
+			line-height: 32px;
+			float: left;
+		}
+		.cotmenu{
+			width: 2px;
+			height: 32px;
+			background-image: url(image/line_bar.gif);
+			float: left;
+		}
+		.khoangtrang{
+			width: 100%;
+			height: 20px;
+			background-color: white;
+			line-height: 20px;
+		}
+		.dongke{
+			width: 100%;
+			height: 10px;
+			border-bottom: gray solid 2px;
+		}
+		#content{
+			width: 100%;
+			height: 860px;
+		}
+		#left{
+			width: 15%;
+			height: 100%;
+			background: white;
+			float: left;
+		}
+		#khoangcach{
+			width: 1%;
+			height: 100%;
+			background-color: white;
+			float: left;
+		}
+		#main{
+			width: 68%;
+			height: 100%;
+			background: white;
+			float: left;
+		}
+		#right{
+			width: 15%;
+			height: 100%;
+			background: white;
+			float: right;
+		}
+		.menubar{
+			width: 100%;
+			height: 26px;
+			background-image: url(image/menu_bar.gif);
+			background-repeat: no-repeat;
+			background-size: 100% 26px;
+		}
+		.o_chon1{
+			width: 98%;
+			height: 120px;
+			border: solid;
+			border-color: gray;
+			border-width: 1px;
+		}
+		.o_chon2{
+			width: 98%;
+			height: 120px;
+			border: solid;
+			border-color: gray;
+			border-width: 1px;
+		}
+		.o_chon3{
+			width: 98%;
+			height: 70px;
+			border: solid;
+			border-color: gray;
+			border-width: 1px;
+		}
+		.o_chon4{
+			width: 98%;
+			height: 170px;
+			border: solid;
+			border-color: gray;
+			border-width: 1px;
+		}
+		.link_anh{
+			width: 150px;
+			height: 150px;
+		}
+		.link_anh:hover{
+			width: 150px;
+			height: 150px;
+			border: solid;
+			border-color: gray;
+			border-width: 1px;
+		}
+		.chu_menu_bar{
+			width: 100%;
+			height: 26px;
+			font-family: Arial;
+			font-size: 12px;
+			color: white;
+			text-align: center;
+			font-weight: bold;
+			line-height: 26px;
+		}
+		.link{
+			width: 100%;
+			height: 30px;
+			font-family: Arial;
+			font-size: 12px;
+			color: gray;
+			text-align: left;
+		}
+		.link:hover{
+			width: 100%;
+			height: 30px;
+			font-family: Arial;
+			font-size: 12px;
+			color: blue;
+			text-align: left;
+			text-decoration: underline;
+		}
+		.online{
+			width: 100%;
+			text-align: center;
+			line-height: 25px;
+		}
+		.online:hover{
+			width: 100%;
+			text-align: center;
+			line-height: 25px;
+			border: solid;
+			border-color: #c4c4c4;
+			border-width: 1px;
+		}
+		#zent{
+			width: 100%;
+			height: 60px;
+			background: #ffc485;
+			border-radius: 20px;
+			color: white;
+			text-align: justify;
+			font-family: Arial;
+			font-size: 12px;
+			font-style: italic;
+			vertical-align: middle;
+			display: table-cell;
+			border: solid;
+			border-color: #ffc485;
+			border-width: 10px;
+		}
+		.main_bar_left{
+			width: 100%;
+			height: 26px;
+			background-image: url(image/main_bar_left.gif);
+			background-repeat: no-repeat;
+			background-size: 100% 26px;
+			font-family: Arial;
+			font-size: 12px;
+			text-align: left;
+			color: white;
+			font-weight: bold;
+			line-height: 26px;
+		}
+		.main_bar_right{
+			width: 100%;
+			height: 26px;
+			background-image: url(image/main_bar_right.gif);
+			background-repeat: no-repeat;
+			background-size: 100% 26px;
+			font-family: Arial;
+			font-size: 12px;
+			text-align: right;
+			color: white;
+			font-weight: bold;
+			line-height: 26px;
+		}
+		.noidung{
+			width: 100%;
+			height: 140px;
+		}
+		.chutrai{
+			width: 100%;
+			height: 20px;
+			font-family: Arial;
+			font-size: 12px;
+			text-align: left;
+			color: orange;
+		}
+		.chutrai:hover{
+			width: 100%;
+			height: 20px;
+			font-family: Arial;
+			font-size: 12px;
+			text-align: left;
+			color: red;
+		}
+		.chuphai{
+			width: 100%;
+			height: 20px;
+			font-family: Arial;
+			font-size: 12px;
+			text-align: right;
+			color: orange;
+		}
+		.chuphai:hover{
+			width: 100%;
+			height: 20px;
+			font-family: Arial;
+			font-size: 12px;
+			text-align: right;
+			color: red;
+		}
+		.anh1{
+			width: 155px;
+			height: 108px;
+			background-image: url(image/phanmem.gif);
+			float: left;
+			border: solid;
+			border-color: #f7f5f0;
+			border-width: 5px;
+		}
+		.anh1:hover{
+			width: 155px;
+			height: 108px;
+			background-image: url(image/phanmem.gif);
+			float: left;
+			border: solid;
+			border-color: yellow;
+			border-width: 5px;
+		}
+		.anh2{
+			width: 155px;
+			height: 108px;
+			background-image: url(image/leroi.jpg);
+			float: right;
+			background-size: 155px 108px;
+			border: solid;
+			border-color: #f7f5f0;
+			border-width: 5px;
+		}
+		.anh2:hover{
+			width: 155px;
+			height: 108px;
+			background-image: url(image/leroi.jpg);
+			float: right;
+			background-size: 155px 108px;
+			border: solid;
+			border-color: yellow;
+			border-width: 5px;
+		}
+		.anh3{
+			width: 155px;
+			height: 108px;
+			background-image: url(image/doanhnghiep.gif);
+			float: left;
+			border: solid;
+			border-color: #f7f5f0;
+			border-width: 5px;
+		}
+		.anh3:hover{
+			width: 155px;
+			height: 108px;
+			background-image: url(image/doanhnghiep.gif);
+			float: left;
+			border: solid;
+			border-color: yellow;
+			border-width: 5px;
+		}
+		.anh4{
+			width: 155px;
+			height: 108px;
+			background-image: url(image/anhvien.gif);
+			float: right;
+			border: solid;
+			border-color: #f7f5f0;
+			border-width: 5px;
+		}
+		.anh4:hover{
+			width: 155px;
+			height: 108px;
+			background-image: url(image/anhvien.gif);
+			float: right;
+			border: solid;
+			border-color: yellow;
+			border-width: 5px;
+		}		
+		.chu{
+			font-family: Arial;
+			font-size: 12px;
+			text-align: justify;
+		}
+		span{
+			color: orange;
+			display: inline;
+		}
+		span:hover{
+			color: blue;
+			display: inline;
+		}
+		#footer{
+			width: 100%;
+			height: 70px;
+			background: #2e2e2e;
+			font-family: Arial;
+			font-size: 12px;
+			color: white;
+			border-top: #ff842b solid 2px;
+			line-height: 70px;
+		}
+	</style>
+</head>
+<body>
+	<div id="center">
+		<div id="web">
+			<div id="anhbia"></div>
+			<div id="menu">
+				<div class="chumenu">Trang Chủ</div>
+				<div class="cotmenu"></div>
+				<div class="chumenu">Giới Thiệu</div>
+				<div class="cotmenu"></div>
+				<div class="chumenu">Tin Tức</div>
+				<div class="cotmenu"></div>
+				<div class="chumenu">Liên Hệ</div>
+				<div class="cotmenu"></div>
+				<div class="chumenu">Diễn Đàn</div>
+				<div class="cotmenu"></div>
+			</div>
+			<div class="khoangtrang">
+				<div class="dongke"></div>
+			</div>
+			<div id="content">
+				<div id="left">
+					<div class="menubar">
+						<div class="chu_menu_bar">Danh Mục Chính</div>
+					</div>
+					<div class="o_chon1">
+						<div class="link">Gia công phần mềm</div>
+						<div class="link">Đào tạo lập trình viên</div>
+						<div class="link">Tư vấn doanh nghiệp</div>
+						<div class="link">Ảnh viên áo cưới</div>
+					</div>
+					<div class="khoangtrang"></div>
+					<div class="menubar">
+						<div class="chu_menu_bar">Bài Viết Đáng Chú ý</div>
+					</div>
+					<div class="o_chon2">
+						<div class="link">Hướng dẫn đăng ký học</div>
+						<div class="link">Hình thức học tập online</div>
+						<div class="link">Cài đặp sử dụng skype</div>
+						<div class="link">Cài đặt sử dụng teamviewer</div>
+					</div>
+					<div class="khoangtrang"></div>
+					<div class="link_anh"><img src="image/img1.gif" alt=""></div>
+					<div class="khoangtrang"></div>
+					<div class="link_anh"><img src="image/img2.gif" alt=""></div>
+				</div>
+				<div id="khoangcach"></div>
+				<div id="main">
+					<div id="zent">ZENT ACADEMY - đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các Thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước. Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc phù hợp với yêu cầu công việc</div>
+					<div class="khoangtrang"></div>
+					<div class="main_bar_left">CNTT</div>
+					<div class="noidung">
+						<div class="chutrai">Gia Công Phần Mềm</div>
+						<div class="anh1"></div>
+						<div class="chu">ZENT ACADEMY - đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các Thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước. Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc phù hợp với yêu cầu công việc... <span>Chi Tiết</span></div>
+					</div>
+					<div class="khoangtrang"></div>
+					<div class="main_bar_right">GIÁO DỤC</div>
+					<div class="noidung">
+						<div class="chuphai">Đào Tạo Lập Trình Viên</div>
+						<div class="anh2"></div>
+						<div class="chu">ZENT ACADEMY - đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các Thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước. Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc phù hợp với yêu cầu công việc... <span>Chi Tiết</span></div>
+					</div>
+					<div class="khoangtrang"></div>
+					<div class="main_bar_left">THƯƠNG MẠI</div>
+					<div class="noidung">
+						<div class="chutrai">Tư Vấn Doanh Nghiệp</div>
+						<div class="anh3"></div>
+						<div class="chu">ZENT ACADEMY - đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các Thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước. Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc phù hợp với yêu cầu công việc... <span>Chi Tiết</span></div>
+					</div>
+					<div class="khoangtrang"></div>
+					<div class="main_bar_right">DỊCH VỤ</div>
+					<div class="noidung">
+						<div class="chuphai">Ảnh Viên Áo Cưới</div>
+						<div class="anh4"></div>
+						<div class="chu">ZENT ACADEMY - đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các Thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước. Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc phù hợp với yêu cầu công việc... <span>Chi Tiết</span></div>
+					</div>
+					<div class="khoangtrang"></div>
+				</div>
+				<div id="khoangcach"></div>
+				<div id="right">
+					<div class="menubar">
+						<div class="chu_menu_bar">Tư Vấn Trực Tuyến</div>
+					</div>
+					<div class="o_chon3">
+						<div class="online">
+							<img src="image/online.gif" alt="">
+						</div>
+						<div class="online">
+							<img src="image/offline.gif" alt="">
+						</div>
+					</div>
+					<div class="khoangtrang"></div>
+					<div class="menubar">
+						<div class="chu_menu_bar">Các Bài Viết Mới</div>
+					</div>
+					<div class="o_chon4">
+						<div class="link">Haccess trong php</div>
+						<div class="link">Html 5 & SEO</div>
+						<div class="link">Viết trang login & logout cho hệ thống</div>
+						<div class="link">CSS nâng cao</div>
+						<div class="link">Làm mịn da mặt với photoshop cs3</div>
+					</div>
+					<div class="khoangtrang"></div>
+					<div class="link_anh"><img src="image/img3.gif" alt=""></div>
+					<div class="khoangtrang"></div>
+					<div class="link_anh"><img src="image/img4.gif" alt=""></div>
+					<div class="link_anh"><img src="image/img5.gif" alt=""></div>
+				</div>
+			</div>
+			<div id="footer">Bản Quyền Thuộc Về ZENTGROUP - ACADEMY</div>
+		</div>
+	</div>
+	
+</body>
+</html>
