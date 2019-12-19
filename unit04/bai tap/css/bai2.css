@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    font-size: 12px;
+}
+#logo{
+    width: 10%;
+    height: 40px;
+    background: url(../image/24h.png) center center no-repeat;
+    background-color: #78b43d;
+    float: left;
+    background-size: 75px 37px;
+}
+
+#main{
+    width: 85%;
+    height: 40px;
+    background-color: #78b43d;
+    float: left;
+}
+#menu>li{
+    float: left;
+    border-left: 1px solid white;
+    background-color: #78b43d;
+}
+#menu>li:hover{
+    background-color: #aad862;
+}
+#menu>li>a{
+    text-decoration: none;
+    color: white;
+}
+#menu li{
+    position: relative;
+    list-style:none;
+}
+#menu li a{
+    padding: 10px;
+    line-height: 20px;
+    display: inline-block;
+}
+#menu .submenu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 180px;
+    background-color: #78b43d;
+}
+.submenu li{
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+.submenu li:hover{
+    background: #78b43d !important;
+}
+.submenu li:hover  a{
+    color:white !important;
+}
+#menu li:hover>.submenu{
+    display: block;
+    background: #aad862;
+}
+#menu>li>.submenu{
+    top: 40px;
+    left: 0;
+}
+.submenu>li>a{
+    text-decoration: none;
+    color: black;
+}
+#search{
+    width: 5%;
+    height: 40px;
+    background-color: #78b43d;
+    float: left;
+    line-height: 45px;
+}
