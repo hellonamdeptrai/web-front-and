@@ -1,0 +1,585 @@
+*{
+	margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+#menu{
+	width: 100%;
+	height: 40px;
+	font-weight: bold;
+	font-size: 14px;
+}
+#bbc{
+	width: 12%;
+	height: 100%;
+	text-align: right;
+	border-right: 1px solid gray;
+	float: left;
+}
+#bbc>img{
+	margin: 8px; 
+	margin-right: 15px;
+}
+#sign{
+	width: 12%;
+	height: 100%;
+	text-align: left;
+	border-right: 1px solid gray;
+	float: left;
+}
+#sign:hover{
+	color: gray;
+	cursor: pointer;
+}
+#sign>i{
+	margin: 12px;
+}
+.menucon{
+	width: 43%;
+	height: 100%;
+	float: left;
+}
+.menucon>div{
+	height: 100%;
+	text-align: center;
+	border-right: 1px solid gray;
+	float: left;
+	line-height: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.menucon>div:hover{
+	color: gray;
+	cursor: pointer;
+}
+#more{
+	width: 10%;
+	height: 100%;
+	border-right: 1px solid gray;
+	float: left;
+	line-height: 40px;
+	padding-left: 10px;
+}
+#more:hover{
+	color: gray;
+	cursor: pointer;
+}
+#more>p{
+	float: left;
+}
+#more>i{
+	float: right;
+	padding-right: 10px;
+	line-height: 40px;	
+}
+#timkiem{
+	width: 21%;
+	height: 100%;
+	float: left;
+	line-height: 40px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+#timkiem>input{
+	z-index: 1;
+	position: absolute;
+}
+#timkiem>i{
+	margin-left: 155px;
+	position: absolute;
+	z-index: 2;
+}
+#timkiem>i:hover{
+	color: gray;
+	cursor: pointer;
+}
+#menu2{
+	width: 100%;
+	height: 100px;
+	background: #bb1818;
+}
+#news{
+	width: 100%;
+	font-size: 50px;
+	color: white;
+	margin-left: 61px;
+}
+#submenu{
+	height: 27px;
+	margin-left: 57px;
+	font-weight: bold;
+	color: white;
+	font-size: 14px;
+}
+.submenucon{
+	float: left;
+	padding-left: 7px;
+	padding-right: 7px;
+	border-right: 1px solid gray;
+	line-height: 27px;
+}
+.submenucon:hover{
+	border-bottom: 5px solid white;
+}
+#more2{
+	height: 100%;
+	width: 13%;
+	float: left;
+	line-height: 27px;
+	padding-left: 7px;
+}
+#more2:hover{
+	border-bottom: 5px solid white;
+}
+#center{
+	text-align: center;
+}
+#main{
+	width: 91%;
+	height: 100%;
+	display: inline-block;
+}
+#baodau{
+	width: 100%;
+	height: 350px;
+	margin-top: 20px;
+}
+.divbe{
+	width: 18%;
+	height: 80%;
+	float: left;
+	text-align: left;
+	margin-right: 2%;
+}
+.divbe>h1:hover{
+	color: gray;
+	cursor: pointer;
+}
+.divto{
+	width: 35%;
+	height: 80%;
+	float: left;
+	background-color: pink;
+	margin-right: 2%;
+}
+.divto:hover{
+	transform: scale(1.01);
+	transition: 0.2s;
+	cursor: pointer;
+}
+.quangcao{
+	width: 23%;
+	height: 80%;
+	float: left;
+}
+.divduoi{
+	width: 18%;
+	height: 14%;
+	float: left;
+	padding: 8px;
+	text-align: left;
+	font-weight: bold;
+	font-size: 14px;
+}
+.divduoi:hover{
+	color: gray;
+	cursor: pointer;
+}
+.gio{
+	height: 20px;
+	float: left;
+	line-height: 20px;
+	color: gray;
+	margin-right: 10px;
+}
+.diadiem{
+	width: 150px;
+	height: 20px;
+	float: left;
+	border-left: 1px solid gray;
+	padding-left: 8px;
+	line-height: 20px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.thongtin{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: gray;
+	font-size: 14px;
+}
+.divto>img{
+	width: 100%;
+	height: 100%;
+}
+.divbe>img{
+	width: 100%;
+	height: 150px;
+}
+.divbe>img:hover{
+	transform: scale(1.01);
+	transition: 0.2s;
+	cursor: pointer;
+}
+.divbe>h4:hover{
+	color: gray;
+	cursor: pointer;
+}
+.bao2{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.bao2>div{
+	width: 18%;
+	height: 100%;
+	float: left;
+	margin-right: 2%;
+	text-align: left;
+}
+.bao2>div>img{
+	width: 100%;
+	height: 130px;
+}
+.bao2>div>img:hover{
+	transform: scale(1.01);
+	transition: 0.2s;
+	cursor: pointer;
+}
+.bao2>div>h4{
+	padding-top: 10px;
+}
+.bao2>div>h4:hover{
+	color: grey;
+	cursor: pointer;
+}
+#divcuoi{
+	border-top: 1px solid gray;
+}
+.bao3{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+}
+.bao3>div{
+	width: 18%;
+	height: 100%;
+	float: left;
+	margin-right: 2%;
+	text-align: left;
+}
+.bao3>div>h4{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.bao3>div>h4:hover{
+	color: grey;
+	cursor: pointer;
+}
+.bao3>div>img:hover{
+	transform: scale(1.01);
+	transition: 0.2s;
+	cursor: pointer;
+}
+.tieude{
+	height: 30px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	width: 100%;
+	float: left;
+}
+.tieude>div{
+	float: left;
+}
+.tieude>div>h1{
+	margin-right: 10px;
+}
+.dongke{
+	width: 74%;
+	border-bottom: 1px solid gray;
+	padding-top: 20px;
+}
+.bao3>div>img{
+	width: 100%;
+	height: 130px;
+}
+.dongke2{
+	width: 87%;
+	border-bottom: 1px solid gray;
+	padding-top: 20px;
+}
+.bao4{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+}
+.bao4to{
+	width: 38%;
+	height: 100%;
+	float: left;
+	margin-right: 2%;
+	text-align: left;
+}
+.bao4to>img{
+	width: 100%;
+	height: 300px;
+}
+.bao4to>img:hover{
+	transform: scale(1.03);
+	transition: 0.5s;
+	cursor: pointer;
+}
+.bao4to>h4{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.bao4to>h4:hover{
+	color: grey;
+	cursor: pointer;
+}
+.bao4nho{
+	width: 60%;
+	height: 100%;
+	float: left;
+	text-align: left;
+}
+.bao4nho>div{
+	width: 30%;
+	height: 100%;
+	float: left;
+	margin-right: 3%;
+	margin-bottom: 2%;
+	text-align: left;
+}
+.bao4nho>div>img{
+	width: 100%;
+	height: 130px;
+}
+.bao4nho>div>img:hover{
+	transform: scale(1.01);
+	transition: 0.2s;
+	cursor: pointer;
+}
+.bao4nho>div>h4:hover{
+	color: grey;
+	cursor: pointer;
+}
+.hoptieude{
+	width: 95%;
+	background-color: #bb1818;
+	color: white;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 5%;
+	padding-bottom: 10px;
+}
+.hoptieude:hover{
+	color: grey;
+	cursor: pointer;
+}
+.hopthongtin{
+	width: 95%;
+	background-color: #f1efec;
+	margin-bottom: 3%;
+	padding-top: 10px;
+	padding-left: 5%;
+	padding-bottom: 15px;
+}
+.hopthongtin:hover{
+	color: grey;
+	cursor: pointer;
+}
+.hopthongtin>p{
+	color: gray;
+	font-size: 12px;
+}
+.dongke3{
+	width: 80%;
+	border-bottom: 1px solid gray;
+	padding-top: 20px;
+}
+.so{
+	width: 20%;
+	color: #bb1818;
+	float: left;
+	font-weight: bold;
+	font-size: 36px;
+}
+.so:hover{
+	cursor: pointer;
+	color: green;
+}
+.canhso{
+	width: 80%;
+	float: left;
+	font-weight: bold;
+}
+.canhso:hover{
+	color: grey;
+	cursor: pointer;
+}
+.dongke4{
+	width: 86%;
+	border-bottom: 1px solid gray;
+	padding-top: 20px;
+}
+.dongke5{
+	width: 83%;
+	border-bottom: 1px solid gray;
+	padding-top: 20px;
+}
+.dongke6{
+	width: 86%;
+	border-bottom: 1px solid gray;
+	padding-top: 20px;
+}
+.most>div{
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+.so2{
+	width: 10%;
+	color: #bb1818;
+	float: left;
+	font-weight: bold;
+	font-size: 36px;
+}
+.canhso2{
+	width: 90%;
+	height: 45px;
+	float: left;
+	font-weight: bold;
+}
+.so2:hover{
+	cursor: pointer;
+	color: green;
+}
+.canhso2:hover{
+	color: grey;
+	cursor: pointer;
+}
+.dongke7{
+	width: 77%;
+	border-bottom: 1px solid gray;
+	padding-top: 20px;
+}
+.dongke8{
+	width: 82%;
+	border-bottom: 1px solid gray;
+	padding-top: 20px;
+}
+.here{
+	margin-bottom: 40px;
+}
+.here:hover{
+	cursor: pointer;
+}
+.here>i{
+	font-size: 24px;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #5a5a5a;
+	font-weight: bold;
+}
+.here>i:hover{
+	color: black;
+}
+.here>div{
+	font-size: 24px;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: grey;
+	border-left: 1px solid gray;
+}
+.here>div:hover{
+	color: black;
+}
+.herechu{
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+.herechu:hover{
+	cursor: pointer;
+	color: gray;
+}
+.bao4nho>div>span{
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+}
+.bao4nho>div>span:hover{
+	cursor: pointer;
+	color: blue;
+}
+.bao4to>.fa{
+	font-size: 24px;
+	padding: 20px;
+}
+.bao4to>.fa:hover{
+	cursor: pointer;
+}
+#bottom{
+	width: 100%;
+	height: 100%;
+	background-color: #4c4c4c;
+	text-align: center;
+}
+#bottomtrong{
+	width: 91%;
+	height: 100%;
+	display: inline-block;
+	text-align: left;
+}
+#explore{
+	color: white;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+#menubottom>div{
+	width: 15%;
+	text-align: left;
+	color: white;
+	font-weight: bold;
+	float: left;
+	border-right: 1px solid grey;
+	margin-right: 10px;
+}
+#menubottom>div>div{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#menubottom>div>div:hover{
+	cursor: pointer;
+	color: black;
+}
+#thongtinthem{
+	width: 100%;
+	border-top: 1px solid gray;
+	margin-top: 15px;
+	float: left;
+}
+#thongtinthem>div{
+	padding-top: 15px;
+	float: left;
+	padding-right: 13px;
+	color: white;
+	font-size: 14px;
+}
+#thongtinthem>div:hover{
+	cursor: pointer;
+	color: black;
+}
+#copyri{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	font-weight: bold;
+	color: white;
+	font-size: 14px;
+}
+#copyri>span{
+	font-weight: normal;
+}
