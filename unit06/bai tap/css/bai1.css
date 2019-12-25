@@ -1,0 +1,193 @@
+*{
+	margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+.center{
+	text-align: center;
+	width: 100%;
+}
+#menu{
+	width: 50%;
+	display: inline-block;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+#menu>div{
+	width: 20%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+#menu>div:hover{
+	color: gray;
+	cursor: pointer;
+}
+.main{
+	text-align: center;
+	width: 100%;
+	background: #f8fafc;
+}
+.logo{
+	margin-bottom: 5%;
+}
+.logo>img{
+	margin-top: -5%;
+	width: 12%;
+}
+.logo>img:hover{
+	cursor: pointer;
+}
+.maintrong1{
+	width: 90%;
+	height: 100%;
+	display: inline-block;
+	text-align: left;
+}
+.tieude{
+	text-align: center;
+	color: #38ad9e;
+	font-size: 50px;
+	margin-bottom: 2%;
+}
+.chunho{
+	text-align: center;
+	margin-bottom: 5%;
+	color: gray;
+}
+.noidung{
+	width: 100%;
+	height: 100%;
+}
+.noidung>div{
+	width: 31%;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	position: relative;
+	overflow: hidden;
+}
+.anh{
+	width: 100%;
+	height: 180px;
+}
+.duoianh{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.anh>img{
+	width: 100%;
+	height: 100%;
+	transition: width 1s, height 1s;
+}
+.anh>img:hover{
+	width: 110%;
+	height: 105%;
+
+}
+.duoianh>h4{
+ 	float: left;
+ 	color: #38ad9e;
+ 	margin-top: 2%;
+}
+.duoianh>i{
+	margin-top: 2%;
+	float: right;
+	color: gray;
+}
+.duoianh>p{
+	float: left;
+	margin-top: 2%;
+	color: gray;
+}
+.thongtin{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	color: gray;
+	font-size: 12px;
+}
+.main2{
+	text-align: center;
+	width: 100%;
+	margin-top: 6%;
+}
+.maintrong2{
+	width: 90%;
+	display: inline-block;
+}
+.divtrai{
+	width: 67%;
+	margin-right: 5%;
+	float: left;
+	text-align: left;
+}
+.divphai{
+	width: 28%;
+	float: left;
+	text-align: left;
+}
+.maintrong2>div>h2{
+	color: #38ad9e;
+	margin-bottom: 2%;
+}
+.maintrong2>div>p{
+	color: gray;
+	font-size: 14px;
+	margin-bottom: 2%;
+}
+.maintrong2>div>p>span{
+	font-size: 14px;
+	color: #38ad9e;
+	text-decoration: underline;
+}
+.maintrong2>div>p>span:hover{
+	cursor: pointer;
+	color: blue;
+}
+.divphai>i{
+	color: #70aaa0;
+	padding: 5%;
+	font-size: 26px;
+}
+.divphai>i:hover{
+	color: gray;
+	cursor: pointer;
+}
+.main3{
+	text-align: center;
+	width: 100%;
+	margin-top: 6%;
+	background: #9accc5;
+}
+.maintrong3{
+	width: 90%;
+	display: inline-block;
+	text-align: left;
+}
+.maintrong3>h1{
+	color: white;
+	margin-top: 5%;
+}
+.maintrong3>p{
+	color: white;
+	margin-bottom: 1%;
+}
+.maintrong3>h4{
+	color: white;
+	margin-top: 3%;
+	margin-bottom: 1%;
+}
+.maintrong3>input{
+	width: 100%;
+	height: 30px;
+}
+.maintrong3>textarea{
+	width: 100%;
+	height: 200px;
+}
