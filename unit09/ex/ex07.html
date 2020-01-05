@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="nhap">
+	<script type="text/javascript">
+		var nhap =  document.getElementById('nhap');
+		nhap.addEventListener('blur', function () {
+			nhap.value = nhap.value.toUpperCase();
+		})
+		nhap.addEventListener('focus', function () {
+			nhap.style.background = 'red'
+		})
+	</script>
+</body>
+</html>

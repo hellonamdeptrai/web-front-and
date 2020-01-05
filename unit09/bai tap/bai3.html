@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 3</title>
+	<link rel="stylesheet" href="css/bai3.css">
+</head>
+<body>
+	<div id="menu">
+		<p>Cỡ chữ</p>
+		<input type="button" id="macdinh" value="Mặc định">
+        <input type="button" id="lon" value="Lớn">
+        <input type="button" id="nho" value="Nhỏ">
+	</div>
+	<p id="chu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aut laborum tempora dolor quas cum ratione earum, illum deserunt facilis accusamus dolorem, nulla mollitia tempore vitae maxime et? Numquam labore soluta autem nostrum quae nobis aperiam explicabo, non illum totam fugit reprehenderit repellendus architecto ipsum debitis eos. Provident velit cumque impedit totam iste aliquid officiis nostrum quis recusandae. Quas fuga facere consequuntur perspiciatis aut quibusdam obcaecati debitis dolores ipsa. Ex quaerat perspiciatis incidunt voluptatem fuga, quia omnis maiores velit doloremque nesciunt, distinctio ipsum temporibus ea facere, non, tempora amet repudiandae. Vero magni, necessitatibus reprehenderit accusamus facilis laudantium fugit error suscipit.</p>
+
+
+	<script type="text/javascript">
+		var macdinh = document.getElementById("macdinh")
+        macdinh.addEventListener('click', function() {
+        	var chu = document.getElementById('chu')
+           	chu.style.fontSize = '16px'
+        })
+        var x = 26;
+        var y = 12;
+        function chulon (){
+            var chu = document.getElementById('chu')
+           	chu.style.fontSize = x + 'px'
+        }
+        function chunho () {
+        	var chu = document.getElementById('chu')
+           	chu.style.fontSize = y + 'px'
+        }
+        
+        var lon = document.getElementById("lon")
+        lon.addEventListener('click', chulon)
+        var nho = document.getElementById("nho")
+        nho.addEventListener('click', chunho)
+	</script>
+</body>
+</html>

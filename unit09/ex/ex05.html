@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<button onclick="gotogoogle()">google</button>
+	<button>facebook</button>
+	<script type="text/javascript">
+		function gotogoogle(){
+			window.location = "https://google.com";
+		}
+		var nutbam = document.getElementsByTagName('button')[1]
+		nutbam.addEventListener('click', facebook)
+		function facebook () {
+			window.location = "https://facebook.com";
+		}
+	</script>
+</body>
+</html>

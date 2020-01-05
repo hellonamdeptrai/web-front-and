@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 2</title>
+	<link rel="stylesheet" href="css/bai2.css">
+</head>
+<body>
+	<div id="main">
+		<div class="hang">
+			<div class="o">
+				<input type="checkbox" name="tich">
+			</div>
+			<div class="chu">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, at?
+			</div>
+		</div>
+		<div class="hang">
+			<div class="o">
+				<input type="checkbox" name="tich">
+			</div>
+			<div class="chu">
+				Ipsum dolor sit amet, consectetur adipisicing elit. Optio!
+			</div>
+		</div>
+		<div class="hang">
+			<div class="o">
+				<input type="checkbox" name="tich">
+			</div>
+			<div class="chu">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</div>
+		</div>
+		<div class="hang">
+			<div class="o">
+				<input type="checkbox" name="tich">
+			</div>
+			<div class="chu">
+				Numquam fuga accusamus, consequuntur, doloremque omnis id quos unde.
+			</div>
+		</div>
+		<div class="hang">
+			<div class="o">
+				<input type="checkbox" name="tich">
+			</div>
+			<div class="chu">
+				libero a velit voluptatibus. Animi aut officia accusantium.
+			</div>
+		</div>
+		<div class="hang">
+			<div class="o">
+				<input type="checkbox" name="tich">
+			</div>
+			<div class="chu">Laudantium veniam quia illum id consequatur?</div>
+		</div>
+		<div class="hang">
+			<div class="o">
+				<input type="checkbox" name="tich">
+			</div>
+			<div class="chu">Doloremque ut nam harum dicta, et est a qui id.</div>
+		</div>
+		<div class="hang">
+			<div class="o">
+				<input type="checkbox" name="tich">
+			</div>
+			<div class="chu">Voluptatum rerum dolorum autem. Sequi, rem, nisi!</div>
+		</div>
+	</div>
+	<div id="nut">
+		<a id="bam1" href="#">Check all</a>
+		<a id="bam2" href="#">Uncheck all</a>
+	</div>
+		
+	<script type="text/javascript">
+		var hang1 = document.getElementsByClassName('hang')[0]
+		function mauxanh () {
+			hang1.style.backgroundColor = 'green'
+			hang1.style.color = 'white'
+		}
+		hang1.addEventListener('mouseover', mauxanh)
+		function trovemau () {
+			hang1.style.backgroundColor = 'white'
+			hang1.style.color = 'black'
+		}
+		hang1.addEventListener('mouseout', trovemau)
+		var hang2 = document.getElementsByClassName('hang')[1]
+		function mauxanh2 () {
+			hang2.style.backgroundColor = 'green'
+			hang2.style.color = 'white'
+		}
+		hang2.addEventListener('mouseover', mauxanh2)
+		function trovemau2 () {
+			hang2.style.backgroundColor = 'white'
+			hang2.style.color = 'black'
+		}
+		hang2.addEventListener('mouseout', trovemau2)
+		var hang3 = document.getElementsByClassName('hang')[2]
+		function mauxanh3 () {
+			hang3.style.backgroundColor = 'green'
+			hang3.style.color = 'white'
+		}
+		hang3.addEventListener('mouseover', mauxanh3)
+		function trovemau3 () {
+			hang3.style.backgroundColor = 'white'
+			hang3.style.color = 'black'
+		}
+		hang3.addEventListener('mouseout', trovemau3)
+		var hang4 = document.getElementsByClassName('hang')[3]
+		function mauxanh4 () {
+			hang4.style.backgroundColor = 'green'
+			hang4.style.color = 'white'
+		}
+		hang4.addEventListener('mouseover', mauxanh4)
+		function trovemau4 () {
+			hang4.style.backgroundColor = 'white'
+			hang4.style.color = 'black'
+		}
+		hang4.addEventListener('mouseout', trovemau4)
+		var hang5 = document.getElementsByClassName('hang')[4]
+		function mauxanh5 () {
+			hang5.style.backgroundColor = 'green'
+			hang5.style.color = 'white'
+		}
+		hang5.addEventListener('mouseover', mauxanh5)
+		function trovemau5 () {
+			hang5.style.backgroundColor = 'white'
+			hang5.style.color = 'black'
+		}
+		hang5.addEventListener('mouseout', trovemau5)
+		var hang6 = document.getElementsByClassName('hang')[5]
+		function mauxanh6 () {
+			hang6.style.backgroundColor = 'green'
+			hang6.style.color = 'white'
+		}
+		hang6.addEventListener('mouseover', mauxanh6)
+		function trovemau6 () {
+			hang6.style.backgroundColor = 'white'
+			hang6.style.color = 'black'
+		}
+		hang6.addEventListener('mouseout', trovemau6)
+		var hang7 = document.getElementsByClassName('hang')[6]
+		function mauxanh7 () {
+			hang7.style.backgroundColor = 'green'
+			hang7.style.color = 'white'
+		}
+		hang7.addEventListener('mouseover', mauxanh7)
+		function trovemau7 () {
+			hang7.style.backgroundColor = 'white'
+			hang7.style.color = 'black'
+		}
+		hang7.addEventListener('mouseout', trovemau7)
+		var hang8 = document.getElementsByClassName('hang')[7]
+		function mauxanh8 () {
+			hang8.style.backgroundColor = 'green'
+			hang8.style.color = 'white'
+		}
+		hang8.addEventListener('mouseover', mauxanh8)
+		function trovemau8 () {
+			hang8.style.backgroundColor = 'white'
+			hang8.style.color = 'black'
+		}
+		hang8.addEventListener('mouseout', trovemau8)
+	</script>
+	<script type="text/javascript">
+        var bam1 = document.getElementById("bam1")
+        bam1.addEventListener('click', function() {
+        	var tichhet = document.getElementsByName('tich');
+            for (var i = 0; i < tichhet.length; i++){
+                tichhet[i].checked = true;
+            }
+        })
+
+        var bam2 = document.getElementById("bam2")
+        bam2.addEventListener('click', function (){
+            var tichhet = document.getElementsByName('tich');
+            for (var i = 0; i < tichhet.length; i++){
+                tichhet[i].checked = false;
+            }
+        })
+	</script>
+</body>
+</html>

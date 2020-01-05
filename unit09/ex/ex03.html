@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input id="click" onclick="clickme()" type="text" value="click me">
+	<script>
+		function clickme(){
+			var e = document.getElementById('click');
+			var type = e.type;
+			if (type == "text") {
+				e.type = "button";
+			}else{
+				e.type = "text";
+			}
+		}
+	</script>
+</body>
+</html>

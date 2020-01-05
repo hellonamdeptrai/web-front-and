@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="thep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, tempore!</p>
+	<div class="thepclas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, aspernatur.</div>
+	<div class="thepclas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, aspernatur.</div>
+	<div class="thepclas">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, aspernatur.</div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident eveniet, debitis, blanditiis illum eos quidem!</p>
+	<script type="text/javascript">
+		var thep = document.getElementById('thep');
+		thep.innerHTML = "Thay đổi text";
+		var thep2 = document.getElementsByClassName('thepclas')[1];
+		thep2.innerHTML = "Thay đổi text2";
+		var thep3 = document.getElementsByTagName('p')[1];
+		thep3.innerHTML = "Thay đổi text3";
+	</script>
+</body>
+</html>
