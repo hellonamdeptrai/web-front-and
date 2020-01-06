@@ -21,15 +21,27 @@
         	var chu = document.getElementById('chu')
            	chu.style.fontSize = '16px'
         })
-        var x = 26;
-        var y = 12;
+        var dem = 0;
         function chulon (){
+        	dem ++;
             var chu = document.getElementById('chu')
-           	chu.style.fontSize = x + 'px'
+           	if (dem == 1) {
+           		chu.style.fontSize = '16px'
+           	}
+           	var s = parseInt(chu.style.fontSize.replace('px',''))*1.4;
+           	chu.style.fontSize = s + 'px'
         }
         function chunho () {
-        	var chu = document.getElementById('chu')
-           	chu.style.fontSize = y + 'px'
+        	dem ++;
+            var chu = document.getElementById('chu')
+           	if (dem == 1) {
+           		chu.style.fontSize = '16px'
+           	}
+           	var s = parseInt(chu.style.fontSize.replace('px',''))
+           	if (s > 3 && s*0.6>3) {
+           		s *= 0.6
+           	}
+           	chu.style.fontSize = s + 'px'
         }
         
         var lon = document.getElementById("lon")
