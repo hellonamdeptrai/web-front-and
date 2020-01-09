@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Bài 1</title>
+	<link rel="stylesheet" href="css/bai1.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+</head>
+<body>
+	<div id="main">
+		<div id="divanh">
+			<div class="anh" id="dau" style="background-image: url(image/1.jpg);"></div>
+			<div class="anh" style="background-image: url(image/2.jpg);"></div>
+			<div class="anh" style="background-image: url(image/3.jpg);"></div>
+			<div class="anh" style="background-image: url(image/4.jpg);"></div>
+			<div class="anh" style="background-image: url(image/5.jpg);"></div>
+			<div class="anh" style="background-image: url(image/6.jpg);"></div>
+			<div class="anh" style="background-image: url(image/7.jpg);"></div>
+			<div class="anh" style="background-image: url(image/8.jpg);"></div>
+		</div>
+		<div class="chonanh">
+			<div class="oanh" onclick="oanhbam(0)"></div>
+			<div class="oanh" onclick="oanhbam(1)"></div>
+			<div class="oanh" onclick="oanhbam(2)"></div>
+			<div class="oanh" onclick="oanhbam(3)"></div>
+			<div class="oanh" onclick="oanhbam(4)"></div>
+			<div class="oanh" onclick="oanhbam(5)"></div>
+			<div class="oanh" onclick="oanhbam(6)"></div>
+			<div class="oanh" onclick="oanhbam(7)"></div>
+		</div>
+		<div class="nut">
+			<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+			<i class="fa fa-chevron-circle-right" aria-hidden="true" style="position: absolute; right: 0;"></i>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var anhhiendau;
+		function hienanh () {
+			var i;
+          	var anh = document.getElementsByClassName("anh");
+          	var oanh = document.getElementsByClassName("oanh");
+          	for (i = 0; i < anh.length; i++) {
+          	   anh[i].style.display = "none";  
+          	}
+          	for (i = 0; i < oanh.length; i++) {
+          	    oanh[i].style.background = '#000000a1';
+          	}
+          	anh[anhhiendau].style.display = "block";  
+          	oanh[anhhiendau].style.background = '#ffffff96';
+          	anhhiendau++;
+          	if (anhhiendau > anh.length - 1) {
+          	 	anhhiendau = 0;
+          	}
+          	setTimeout(hienanh, 10000);
+		}
+		var bamtrai = document.getElementsByTagName('i')[0];
+		var bamphai = document.getElementsByTagName('i')[1];
+		bamphai.addEventListener('click', function() {
+			var i;
+          	var anh = document.getElementsByClassName("anh");
+          	var oanh = document.getElementsByClassName("oanh");
+          	for (i = 0; i < anh.length; i++) {
+          	   anh[i].style.display = "none";  
+          	}
+          	for (i = 0; i < oanh.length; i++) {
+          	    oanh[i].style.background = '#000000a1';
+          	}
+          	anh[anhhiendau].style.display = "block";  
+          	oanh[anhhiendau].style.background = '#ffffff96';
+          	anhhiendau++;
+          	if (anhhiendau > anh.length - 1) {
+          	 	anhhiendau = 0;
+          	}
+		});
+		function quaylai () {
+			var i;
+          	var anh = document.getElementsByClassName("anh");
+          	var oanh = document.getElementsByClassName("oanh");
+          	for (i = 0; i < anh.length; i++) {
+          	   anh[i].style.display = "none";  
+          	}
+          	for (i = 0; i < oanh.length; i++) {
+          	    oanh[i].style.background = '#000000a1';
+          	}
+          	anh[anhhiendau].style.display = "block";  
+          	oanh[anhhiendau].style.background = '#ffffff96';
+          	anhhiendau--;
+          	if (anhhiendau == -1) {
+          	 	anhhiendau = anh.length - 1;
+          	}
+		}
+		bamtrai.addEventListener('click', quaylai);
+		hienanh(anhhiendau = 0);
+      	function oanhbam(n) {
+      	  	hienanh(anhhiendau = n);
+      	}
+	</script>
+</body>
+</html>

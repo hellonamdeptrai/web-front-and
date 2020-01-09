@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>Bài 2</title>
+	<link rel="stylesheet" href="css/bai2.css">
+</head>
+<body>
+	<div id="center">
+		<div id="main">
+			<div id="divtrai">
+				<p>Họ và tên</p>
+				<p>Giới tính</p>
+				<p>Email</p>
+				<p>Số điện thoại</p>
+				<p>Mật khẩu</p>
+				<p>Xác nhận mật khẩu</p>
+			</div>
+			<div id="divgiua">
+				<form name="frm" action="#">
+					<input type="text" name="name"> <span class="loi"></span> <br>
+					<input type="radio" name="gioitinh" id="gtnam" style="width: auto;"> Nam <input type="radio" name="gioitinh" id="gtnu" style="width: auto; margin-left: 25px;"> Nữ <span class="loi" style="margin-left: 350px;"></span> <br>
+					<input type="email" name="email"> <span class="loi"></span> <br>
+					<input type="text" name="sdt"> <span class="loi"></span> <br>
+					<input type="password" name="pass"> <span class="loi"></span> <br>
+					<input type="password" name="pass2"> <span class="loi"></span> <br>
+				</form>
+			</div>
+		</div>
+		<div id="nutbam">
+			<div><button>Đăng ký</button></div>
+			<div><button>Xóa trắng</button></div>
+		</div>
+	</div>
+
+
+
+	<script type="text/javascript">
+		function validateEmail(email) {
+    		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+   			return re.test(String(email).toLowerCase());
+		}
+		function xoa () {
+			var name = document.frm.name;
+			var gtnam = document.getElementById('gtnam');
+			var gtnu = document.getElementById('gtnu');
+			var email = document.frm.email;
+			var sdt = document.frm.sdt;
+			var pass = document.frm.pass;
+			var pass2 = document.frm.pass2;
+			name.value = "";
+			gtnam.checked=false;
+			gtnu.checked=false;
+			email.value = "";
+			sdt.value = "";
+			pass.value = "";
+			pass2.value = ""; 
+		}
+		var dangky = document.getElementsByTagName('button')[0];
+		dangky.addEventListener('click', function () {
+			// event.preventDefault();
+			var name = document.frm.name;
+			var gtnam = document.getElementById('gtnam');
+			var gtnu = document.getElementById('gtnu');
+			var email = document.frm.email;
+			var sdt = document.frm.sdt;
+			var pass = document.frm.pass;
+			var pass2 = document.frm.pass2;
+			//tên
+			if (name.value == "") {
+				name.nextElementSibling.innerHTML = "Tên không được để trống";
+				return;
+			}else if (name.value.length <=8) {
+				name.nextElementSibling.innerHTML = "Tên phải lớn hơn 8 ký tự";
+				return;
+			}else {
+				name.nextElementSibling.innerHTML = "";
+			}
+			//giới tính
+			if (gtnam.checked==false && gtnu.checked==false) {
+				gtnu.nextElementSibling.innerHTML = "Hãy chọn giới tính";
+				return;
+			}else {
+				gtnu.nextElementSibling.innerHTML = "";
+			}
+			//email
+			if (email.value == "") {
+				email.nextElementSibling.innerHTML = "Email không được để trống";
+				return;
+			}else if (!validateEmail(email.value)) {
+				email.nextElementSibling.innerHTML = "Email không đúng định dạng";
+				return;
+			}else {
+				email.nextElementSibling.innerHTML = "";
+			}
+			//số điện thoại
+			if (sdt.value == "") {
+				sdt.nextElementSibling.innerHTML = "Số điện thoại không được để trống";
+				return;
+			}else if (!Number(sdt.value)) {
+				sdt.nextElementSibling.innerHTML = "Số điện thoại không được chứa chữ";
+				return;
+			}else if (sdt.value.length < 10 || sdt.value.length > 10) {
+				sdt.nextElementSibling.innerHTML = "Số điện thoại không đúng";
+				return;
+			}else {
+				sdt.nextElementSibling.innerHTML = "";
+			}
+			//mật khẩu
+			if (pass.value == "") {
+				pass.nextElementSibling.innerHTML = "Mật khẩu không được để trống";
+				return;
+			}else if (pass.value.length < 8) {
+				pass.nextElementSibling.innerHTML = "Mật khẩu phải lớn hơn 8 ký tự";
+				return;
+			}else {
+				pass.nextElementSibling.innerHTML = "";
+			}
+			//xác nhận mật khẩu
+			if (pass2.value == "") {
+				pass2.nextElementSibling.innerHTML = "Vui lòng xác nhận mật khẩu";
+				return;
+			}else if (pass2.value != pass.value) {
+				pass2.nextElementSibling.innerHTML = "Mật khẩu không khớp";
+				return;
+			}else {
+				pass2.nextElementSibling.innerHTML = "";
+			}
+			alert("Đăng ký thành công");
+			window.location = "";
+		})
+		document.addEventListener('keyup', function () {
+			var name = document.frm.name;
+			var gtnam = document.getElementById('gtnam');
+			var gtnu = document.getElementById('gtnu');
+			var email = document.frm.email;
+			var sdt = document.frm.sdt;
+			var pass = document.frm.pass;
+			var pass2 = document.frm.pass2;
+			//tên
+			if (name.value == "") {
+				name.nextElementSibling.innerHTML = "Tên không được để trống";
+			}else if (name.value.length <=8) {
+				name.nextElementSibling.innerHTML = "Tên phải lớn hơn 8 ký tự";
+			}else {
+				name.nextElementSibling.innerHTML = "";
+			}
+			//giới tính
+			if (gtnam.checked==false && gtnu.checked==false) {
+				gtnu.nextElementSibling.innerHTML = "Hãy chọn giới tính";
+			}else {
+				gtnu.nextElementSibling.innerHTML = "";
+			}
+			//email
+			if (email.value == "") {
+				email.nextElementSibling.innerHTML = "Email không được để trống";
+			}else if (!validateEmail(email.value)) {
+				email.nextElementSibling.innerHTML = "Email không đúng định dạng";
+			}else {
+				email.nextElementSibling.innerHTML = "";
+			}
+			//số điện thoại
+			if (sdt.value == "") {
+				sdt.nextElementSibling.innerHTML = "Số điện thoại không được để trống";
+			}else if (!Number(sdt.value)) {
+				sdt.nextElementSibling.innerHTML = "Số điện thoại không được chứa chữ";
+			}else if (sdt.value.length < 10 || sdt.value.length > 10) {
+				sdt.nextElementSibling.innerHTML = "Số điện thoại không đúng";
+			}else {
+				sdt.nextElementSibling.innerHTML = "";
+			}
+			//mật khẩu
+			if (pass.value == "") {
+				pass.nextElementSibling.innerHTML = "Mật khẩu không được để trống";
+			}else if (pass.value.length < 8) {
+				pass.nextElementSibling.innerHTML = "Mật khẩu phải lớn hơn 8 ký tự";
+			}else {
+				pass.nextElementSibling.innerHTML = "";
+			}
+			//xác nhận mật khẩu
+			if (pass2.value == "") {
+				pass2.nextElementSibling.innerHTML = "Vui lòng xác nhận mật khẩu";
+				return;
+			}else if (pass2.value != pass.value) {
+				pass2.nextElementSibling.innerHTML = "Mật khẩu không khớp";
+				return;
+			}else {
+				pass2.nextElementSibling.innerHTML = "";
+			}
+		});
+		var xoatrang = document.getElementsByTagName('button')[1];
+		xoatrang.addEventListener('click', xoa);
+	</script>
+</body>
+</html>

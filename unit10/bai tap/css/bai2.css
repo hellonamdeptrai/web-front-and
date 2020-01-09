@@ -1,0 +1,70 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+body{
+	background-image: url(../image/haha.jpg);
+	background-size: cover;
+	background-repeat: repeat;
+}
+#center{
+	text-align: center;
+}
+#main{
+	width: 70%;
+	height: 100%;
+	background-color: #ffffff2e;
+	display: inline-block;
+	border-radius: 25px;
+	margin-top: 10%;
+	border: 1px solid gray;
+	box-shadow: 1px 1px 70px gray;
+}
+#divtrai{
+	width: 19%;
+	height: 100%;
+	float: left;
+	text-align: left;
+	margin-top: 3%;
+	margin-left: 1%;
+}
+#divgiua{
+	width: 80%;
+	height: 100%;
+	float: left;
+	margin-top: 3%;
+	text-align: left;
+}
+#divtrai>p{
+	margin-bottom: 35px;
+	font-weight: bold;
+}
+#divgiua>form>input{
+	width: 55%;
+	margin-left: 5%;
+	margin-bottom: 30px;
+	line-height: 20px;
+}
+#divgiua>form>span{
+	margin-left: 6%;
+	color: red;
+	font-size: 14px;
+}
+#nutbam{
+	width: 60%;
+	height: 100%;
+	display: inline-block;
+}
+#nutbam>div{
+	width: 50%;
+	height: 100%;
+	float: left;
+	margin-top: 6%;
+}
+#nutbam>div>button{
+	background-color: gray;
+	color: white;
+	line-height: 30px;
+	width: 25%;
+}
