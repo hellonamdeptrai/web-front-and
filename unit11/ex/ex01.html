@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, placeat.</p>
+	<p>Lorem ipsum dolor sit amet.</p>
+	<div id="id1" class="cls">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eaque aspernatur, necessitatibus corporis architecto amet dolore, ad culpa repudiandae error adipisci, accusantium voluptate dolor fugiat eos, sequi! Voluptatem, nesciunt, non?</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('p').css({'color':'red'});
+			$('#id1').css({'color':'gray'});
+			$('.cls').css({'color':'blue'});
+		})
+	</script>
+</body>
+</html>

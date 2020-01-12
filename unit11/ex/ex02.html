@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery 2</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, fugit.</p>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quidem assumenda corrupti molestiae ab, laboriosam.</div>
+	<input type="text" id="name">
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('p').text('<a href="google.com">the a</a>');
+			$('div').html('<a href="google.com">the a</a>');
+			$('#name').val("ksldcls");
+
+			$('p').css('color','red');
+			$('div').css({'color':'red','background':'gray'});
+
+			$('div').width('600px');
+			$('div').height('500px');
+
+			// $('p').remove(); // xóa bỏ hoàn toàn
+
+			$('p').empty(); // xóa ngoài giáo diện, nhưng không xóa trong html
+
+		})
+	</script>
+</body>
+</html>

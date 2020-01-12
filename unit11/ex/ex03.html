@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery 3</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, fugit.</p>
+	<button>bấm</button>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('button').on('click', function(){
+				$('p').css({'color':'yellow'});
+			})
+			$("p").on({
+				mouseenter: function(){
+					$(this).css("background-color","lightgray");
+				},
+				mouseleave: function(){
+					$(this).css("background-color","red");
+				},
+				click: function(){
+					$(this).css("background-color","lightblue");
+				}
+			});
+		})
+	</script>
+</body>
+</html>

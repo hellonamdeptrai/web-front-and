@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery 6</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<button id="clickme">click me</button>
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#clickme').on('click', function(){
+				$(this).after("<button id='test'>click test</button>");
+			});
+			$('body').on('click', '#test', function(){
+				alert('click test');
+			});
+		});
+	</script>
+</body>
+</html>

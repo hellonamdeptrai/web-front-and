@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery 4</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		div{
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, fugit.</div>
+	<button id="prepend">prepend</button>
+	<button id="before">before</button>
+	<button id="append">append</button>
+	<button id="after">after</button>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#prepend').on('click', function(){
+				$('div').prepend("hello prepend ");
+			});
+			$('#before').on('click', function(){
+				$('div').before("hello before");
+			});
+			$('#append').on('click', function(){
+				$('div').append(" hello append");
+			});
+			$('#after').on('click', function(){
+				$('div').after("hello after");
+			});
+		})
+	</script>
+</body>
+</html>

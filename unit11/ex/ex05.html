@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery 5</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		.tenclas{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, fugit.</p>
+	<button>addClass</button>
+	<button>removeClass</button>
+	<button>toggleClass</button>
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('button').eq(0).on('click', function(){
+				$('p').addClass('tenclas');
+			});
+			$('button').eq(1).on('click', function(){
+				$('p').removeClass('tenclas');
+			});
+			$('button').eq(2).on('click', function(){
+				$('p').toggleClass('tenclas');
+			});
+		})
+	</script>
+</body>
+</html>

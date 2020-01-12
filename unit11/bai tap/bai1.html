@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Bài 1</title>
+	<link rel="stylesheet" href="css/bai1.css">
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<div id="main">
+	    <h3 style="background-color: #2184be;">1. Account</h3>
+	    <div style="display: block;">
+	        <p>User name *</p> 
+	        <input id="userName" name="userName" type="text"><span class="loi"></span>
+            <p>Password *</p>
+            <input id="password" type="text"><span class="loi"></span>
+            <p>Confirm Password *</p>
+            <input id="confirm" type="text"><span class="loi"></span>
+	        <p>(*) Mandatory</p>
+	    </div>
+	    <h3>2. Profile</h3>
+	    <div>
+	        <p>First name *</p>
+	        <input id="name" type="text"><span class="loi"></span>
+	        <p>Last name *</p>
+	        <input id="surname" type="text"><span class="loi"></span>
+	        <p>Email *</p>
+	        <input id="email" type="text"><span class="loi"></span>
+	        <p>Address</p>
+	        <input id="address" type="text">
+	        <p>(*) Mandatory</p>
+	    </div>
+	    <h3>3. Hints</h3>
+	    <div>
+	        <ul>
+	            <li>Foo</li>
+	            <li>Bar</li>
+	            <li>Foobar</li>
+	        </ul>
+	    </div>
+	    <h3>4. Finish</h3>
+	    <div>
+	        <input id="acceptTerms" name="acceptTerms" type="checkbox">I agree with the Terms and Conditions.
+	    </div>
+	    <div></div>
+	</div>
+	<div id="nutbam">
+		<button>Previous</button>
+		<button>Next</button>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var hihi;
+			function next () {
+				var noidung = $('#main>div');
+				var menu = $('#main>h3');
+
+				var userName = $('#userName');
+				var password = $('#password');
+				var confirm = $('#confirm');
+				var name = $('#name');
+				var surname = $('#surname');
+				var email = $('#email');
+				for (var i = 0; i < noidung.length; i++) {
+					$(noidung[i]).css({'display':'none'});
+				}
+				for (var i = 0; i < menu.length; i++) {
+					$(menu[i]).css({'background':'#9dc8e2'});
+				}
+				$(noidung[hihi]).css({'display':'block'});
+				$(menu[hihi]).css({'background':'#2184be'});
+				if (userName == userName.val()) {
+					$('.loi').text('add')
+					return;
+				}
+				hihi++;
+				if (hihi > noidung.length - 1) {
+          	 		hihi = noidung.length - 1;
+          	 		alert('Đăng ký thành công');
+          		};
+			};
+			function previous () {
+				var noidung = $('#main>div');
+				var menu = $('#main>h3');
+				for (var i = 0; i < noidung.length; i++) {
+					$(noidung[i]).css({'display':'none'});
+				}for (var i = 0; i < menu.length; i++) {
+					$(menu[i]).css({'background':'#9dc8e2'});
+				}
+				$(noidung[hihi]).css({'display':'block'});
+				$(menu[hihi]).css({'background':'#2184be'});
+				hihi--;
+				if (hihi == -1) {
+          	 		hihi = 0;
+          		};
+			};
+			$('button').eq(1).on('click', next);
+			$('button').eq(0).on('click', previous);
+			next(hihi = 0);
+		});
+	</script>
+</body>
+</html>
