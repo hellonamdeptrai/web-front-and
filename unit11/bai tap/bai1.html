@@ -14,9 +14,9 @@
 	        <p>User name *</p> 
 	        <input id="userName" name="userName" type="text"><span class="loi"></span>
             <p>Password *</p>
-            <input id="password" type="text"><span class="loi"></span>
+            <input id="password" type="password"><span class="loi"></span>
             <p>Confirm Password *</p>
-            <input id="confirm" type="text"><span class="loi"></span>
+            <input id="confirm" type="password"><span class="loi"></span>
 	        <p>(*) Mandatory</p>
 	    </div>
 	    <h3>2. Profile</h3>
@@ -29,19 +29,18 @@
 	        <input id="email" type="text"><span class="loi"></span>
 	        <p>Address</p>
 	        <input id="address" type="text">
+	        <p>Age (The warning step will show up if age is less than 18) *</p>
+	        <input id="age" type="text"><span class="loi"></span>
 	        <p>(*) Mandatory</p>
 	    </div>
-	    <h3>3. Hints</h3>
+	    <h3>3. Warning</h3>
 	    <div>
-	        <ul>
-	            <li>Foo</li>
-	            <li>Bar</li>
-	            <li>Foobar</li>
-	        </ul>
+	        <p>Phải trên 18 tuổi mới cho đăng ký :)))</p>
 	    </div>
 	    <h3>4. Finish</h3>
 	    <div>
-	        <input id="acceptTerms" name="acceptTerms" type="checkbox">I agree with the Terms and Conditions.
+	        <input id="acceptTerms" type="checkbox">I agree with the Terms and Conditions.*<span class="loi"></span>
+	        <p>(*) Mandatory</p>
 	    </div>
 	    <div></div>
 	</div>
@@ -56,13 +55,10 @@
 			function next () {
 				var noidung = $('#main>div');
 				var menu = $('#main>h3');
-
-				var userName = $('#userName');
-				var password = $('#password');
-				var confirm = $('#confirm');
-				var name = $('#name');
-				var surname = $('#surname');
-				var email = $('#email');
+				function validateEmail(email) {
+    				var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+   					return re.test(String(email).toLowerCase());
+				}
 				for (var i = 0; i < noidung.length; i++) {
 					$(noidung[i]).css({'display':'none'});
 				}
@@ -71,15 +67,74 @@
 				}
 				$(noidung[hihi]).css({'display':'block'});
 				$(menu[hihi]).css({'background':'#2184be'});
-				if (userName == userName.val()) {
-					$('.loi').text('add')
+
+				if ($('#userName').val() == "") {
+					$('.loi').eq(0).text("Tên không được để trống");
 					return;
+				}else{
+					$('.loi').eq(0).text("");
 				}
-				hihi++;
-				if (hihi > noidung.length - 1) {
-          	 		hihi = noidung.length - 1;
-          	 		alert('Đăng ký thành công');
-          		};
+				if ($('#password').val() == "") {
+					$('.loi').eq(1).text("Mật khẩu không được để trống");
+					return;
+				}else if ($('#password').val().length < 8){
+					$('.loi').eq(1).text("Mật khẩu phải trên 8 ký tự");
+					return;
+				}else{
+					$('.loi').eq(1).text("");
+				}
+				if ($('#confirm').val() == "") {
+					$('.loi').eq(2).text("Mật khẩu không được để trống");
+					return;
+				}else if ($('#confirm').val() != $('#password').val()) {
+					$('.loi').eq(2).text("Mật khẩu không khớp");
+					return;
+				}else{
+					$('.loi').eq(2).text("");
+				}
+
+				hihi = 1;
+				if ($('#name').val() == "") {
+					$('.loi').eq(3).text("First name không được để trống");
+					return;
+				}else{
+					$('.loi').eq(3).text("");
+				}
+				if ($('#surname').val() == "") {
+					$('.loi').eq(4).text("Last name không được để trống");
+					return;
+				}else{
+					$('.loi').eq(4).text("");
+				}
+				if ($('#email').val() == "") {
+					$('.loi').eq(5).text("Email không được để trống");
+					return;
+				}else if (!validateEmail($('#email').val())) {
+					$('.loi').eq(5).text("Email không đúng định dạng");
+					return;
+				}else{
+					$('.loi').eq(5).text("");
+				}
+				if ($('#age').val() == "") {
+					$('.loi').eq(6).text("Tuổi không được để trống");
+					return;
+				}else{
+					$('.loi').eq(6).text("");
+				}
+				hihi=2;
+				if ($('#age').val() < 18) {
+					hihi = 2;
+					return;
+				}else{
+					hihi= 3;
+				}
+				if ($('#acceptTerms').prop("checked") == false) {
+					$('.loi').eq(7).text("Bạn phải chấp nhận với chính sách của bọn tôi :)))");
+					return;
+				}else{
+					alert('Đăng ký thành công');
+				}
+				window.location = "";
 			};
 			function previous () {
 				var noidung = $('#main>div');
