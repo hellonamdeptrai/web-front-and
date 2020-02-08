@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Bài 1</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="css/bai1.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+</head>
+<body>
+	<div id="menu">
+		<h3>Hello!</h3>
+		<i id="bam" class="fa fa-bars" aria-hidden="true"></i>
+		<div id="bangmenu">
+			<div id="avatar">
+				<img src="image/1.jpg" alt="">
+			</div>
+			<p>Responsive Menu</p>
+			<ul id="menu2">
+				<li><i class="fa fa-home" aria-hidden="true"></i> Home</li>
+				<li><i class="fa fa-book" aria-hidden="true"></i> About</li>
+				<li id="bam2"><i class="fa fa-user" aria-hidden="true"></i> Account</li>
+				<ul id="hienra">
+                   	<li><i class="fa fa-sign-in" aria-hidden="true"></i> Loggin</li>
+                   	<li><i class="fa fa-sign-in" aria-hidden="true"></i> Signin</li>
+                   	<li><i class="fa fa-user" aria-hidden="true"></i> Nam</li>
+                </ul>
+				<li><i class="fa fa-info" aria-hidden="true"></i> Support</li>
+				<li><i class="fa fa-usd" aria-hidden="true"></i> Pricing</li>
+			</ul>
+		</div>
+		<ul>
+			<li>
+				Home
+			</li>
+			<li>
+				About
+			</li>
+			<li>
+				Account
+				<ul class="submenu">
+                    <li>Loggin</li>
+                    <li>Signin</li>
+                    <li>Nam</li>
+                </ul>
+			</li>
+			<li>
+				Support
+			</li>
+			<li>
+				Pricing
+			</li>
+		</ul>
+	</div>
+	<marquee behavior="" direction="">Hello🙂. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, sequi!</marquee>
+	<div id="noidung">
+		<h1>WordPress Responsive Menu</h1>
+		<p>Taking the stress out of buliding yord website</p>
+		<div>
+			<i class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+			GET IT NOW
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#bam').on('click', function(){
+				$('#bangmenu').animate({
+					width : 'toggle'
+				});
+			});
+			$('#bam2').on('click', function(){
+				$('#hienra').slideToggle();
+			});
+		})
+	</script>
+</body>
+</html>

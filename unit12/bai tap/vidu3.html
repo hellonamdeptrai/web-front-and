@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+  <title>Bài 5</title>
+  <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="../js/jssor.slider.min.js"></script>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        $(document).ready(function ($) {
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $Idle: 2000,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+        });
+    </script>
+    <style>
+        .jssorb052 .i {
+          position:absolute;cursor:pointer;
+        }
+        .jssorb052 .i .b {
+          fill:#000;fill-opacity:0.3;
+        }
+        .jssorb052 .i:hover .b {
+          fill-opacity:.7;
+        }
+        .jssorb052 .iav .b {
+          fill-opacity: 1;
+        }
+        .jssorb052 .i.idn {
+          opacity:.3;
+        }
+    </style>
+
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div>
+                <img data-u="image" src="image/1.jpg" />
+            </div>
+            <div >
+                <img data-u="image" src="image/2.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="image/3.jpg" />
+            </div>
+            <div>
+                <img data-u="image" src="image/4.jpg" />
+            </div>  
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb052" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+</body>
+</html>

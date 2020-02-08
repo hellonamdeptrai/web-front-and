@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Bài 3</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="css/bai3.css">
+	<link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+</head>
+<body>
+	<div id="main">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Profile</a>
+				<ul>
+					<li><a href="#">Hihi</a></li>
+					<li><a href="#">Haha</a>
+						<ul>
+							<li><a href="#">Lorem ipsum dolor.</a></li>
+							<li><a href="#">hihi</a></li>
+						</ul>
+					</li>
+					<li><a href="#">:)))</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Services</a>
+				<ul>
+					<li><a href="#">Web Design</a></li>
+					<li><a href="#">Web Development</a></li>
+					<li><a href="#">Logo and Print Design</a></li>
+					<li><a href="#">Batagor Enak Neh</a>
+						<ul>
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Web Development</a></li>
+							<li><a href="#">Logo and Print Design</a></li>
+							<li><a href="#">Batagor Enak Neh</a></li>
+							<li><a href="#">Ngerujak juga</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Ngerujak juga</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Portofolio</a></li>
+			<li><a href="#">Pengen ke Arab</a></li>
+			<li><a href="#">Beasiswa S2 Go!! Goo!!</a>
+				<ul>
+					<li><a href="#">Lokal</a></li>
+					<li><a href="#">Intermational</a>
+						<ul>
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Web Development</a>
+							<li><a href="#">Ngerujak juga</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Hire me</a>
+				<ul>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Logout</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#main>ul li').hover(function () {
+				$(this).find("ul:first").slideDown(300);
+			}, function () {
+				$(this).find("ul:first").slideUp(100);
+			});
+		});
+	</script>
+</body>
+</html>

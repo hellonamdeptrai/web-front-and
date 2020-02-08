@@ -1,0 +1,14 @@
+*{
+	font-family: Arial;
+}
+a{
+	width: 20%;
+	height: 10%;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+a>img{
+	width: 100%;
+	height: 100%;
+}

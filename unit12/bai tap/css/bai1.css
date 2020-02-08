@@ -1,0 +1,155 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+#menu{
+	width: 100%;
+	height: 100%;
+	background-image: url(../image/hinhnen.jpg);
+	background-size: cover;
+	display: inline-block;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#menu>i{
+	display: none;
+}
+#bangmenu{
+	display: none;
+}
+#avatar>img{
+	display: none;
+}
+#menu>div>p{
+	display: none;
+}
+#menu2{
+	display: none;
+}
+#menu>h3{
+	float: left;
+	padding-left: 5%;
+	color: white;
+}
+#menu>ul{
+	width: 48%;
+	float: right;
+}
+#menu>ul>li{
+	float: left;
+	padding-left: 8%;
+	list-style: none;
+	color: white;
+}
+#menu>ul>li:hover{
+	color: #cccccc;
+	cursor: pointer;
+}
+#noidung{
+	background: linear-gradient(#313654, #d7615d);
+	text-align: center;
+	color: white;
+	padding-top: 15%;
+	padding-bottom: 20%;
+}
+#noidung>h1{
+	padding-bottom: 1%;
+}
+#noidung>div{
+	width: 15%;
+	height: 100%;
+	background-color: #8080806e;
+	border: 1px solid white;
+	display: inline-block;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	margin-top: 3%;
+}
+.submenu{
+	display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 100;
+    width: 10%;
+}
+.submenu>li{
+	border-bottom: 1px solid white;
+	padding-left: 10%;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	color: white;
+}
+#menu li:hover>.submenu{
+    display: block;
+    background: #d7615d;
+    cursor: pointer;
+}
+.submenu>li:hover{
+	background-color: #8080806e;
+}
+@media all and (min-width: 10px) and (max-width: 870px){
+	#menu>ul{
+		display: none;
+		position: relative;
+	}
+	#menu>i{
+		display: block;
+		right: 0;
+		position: absolute;
+		padding-right: 3%;
+		color: white;
+		cursor: pointer;
+	}
+	#menu>div{
+		width: 70%;
+		height: 100%;
+		background-image: url(../image/hinhnen.jpg);
+		background-size: cover;
+		z-index: 200;
+		position: absolute;
+		top: 0;
+	}
+	#avatar{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-left: 40%;
+		margin-top: 8%;
+		border: 2px solid gray;
+	}
+	#avatar>img{
+		width: 145%;
+		height: 100%;
+		display: block;
+	}
+	#menu>div>p{
+		margin-left: 34%;
+		margin-top: 2%;
+		color: white;
+		font-weight: bold;
+		display: block;
+	}
+	#menu2{
+		width: 98%;
+		margin-top: 8%;
+		display: block;
+	}
+	#menu2>li{
+		margin-bottom: 5%;
+		color: white;
+		margin-left: 6%;
+		list-style: none;
+	}
+	#hienra>li{
+		margin-bottom: 5%;
+		list-style: none;
+		margin-left: 15%;
+		margin-top: 5%;
+		color: white;
+	}
+	#hienra{
+		display: none;
+	}
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+    <style type="text/css">
+      body {
+  background: #f1f1f1;
+}
+.mothership {
+  max-width: 900px;
+  margin: 0 auto;
+}
+header {
+  background: #333;
+  padding: 20px;
+  transition: 0.5s;
+}
+header a {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  text-decoration: none;
+}
+header.js-is-sticky {
+  background: rgba(0, 0, 0, 0.5);
+}
+.wrapper {
+  display: flex;
+}
+.container section {
+  width: 70%;
+  padding: 0 35px;
+  margin: 15px 0;
+}
+.container aside {
+  width: 30%;
+  margin: 35px 0;
+}
+.container aside .signup {
+  padding: 5px 0;
+}
+.h {
+  height: 1800px;
+  background: #ccc;
+}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stickybits/3.7.3/jquery.stickybits.min.js"></script>
+    <title>Sticky</title>
+  </head>
+  <body>
+    <div class="mothership">
+      <div class="container">
+        <header>
+          <a href="#">ieatwebsites</a>
+        </header>
+
+        <div class="wrapper">
+          <section>
+            <h1>Title</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </section>
+        
+        <aside>
+          <div class="signup">
+            <h2>Sign up now and receive a free book</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+          </div>
+        </div>
+        </aside>
+      </div>
+      <div class="h"></div>
+    </div>
+    <script>
+        $(document).ready(function () {
+          $('header').stickybits('selector', {useStickyClasses: true})
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    $('header').css({'color':'red','background':'gray'});
+  } else {
+    $('header').css({'color':'blue','background':'gray'});
+  }
+        })
+//       stickybits('header', {
+//         useStickyClasses: true
+// });
+
+// const headerHeight = document.querySelector('header').offsetHeight;
+
+// stickybits('.signup', {
+//     stickyBitStickyOffset: headerHeight
+// })
+    </script>
+  </body>
+</html>

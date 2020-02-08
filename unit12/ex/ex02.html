@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex 2</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		div{
+			border: 1px solid #ccc;
+		}
+		div *{
+			display: block;
+			padding: 10px;
+			margin: 20px;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+	<div>div
+		<p>p</p>
+		<h1>h1</h1>
+		<h2>h2</h2>
+		<h3>h3</h3>
+		<h4>h4</h4>
+		<h5>h5</h5>
+
+		<ul>
+			<li class="mb">ha noi</li>
+			<li class="mb">hai phong</li>
+			<li>can tho</li>
+			<li>ca mau</li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('h2').next().css({'border-color':'blue'});
+			$('h2').nextAll('li').css({'border-color':'red'});
+			$('h2').prevAll().css({'border-color':'blue'});
+			$('h2').siblings().css({'border-color':'green'});
+			$('h1').first().css({'color':'blue'});
+			$('h1').last().css({'color':'yellow'});
+			$('li').filter('.mb').css({'background':'blue'});
+			$('li').not('.mb').css({'background':'red'});
+		});
+	</script>
+</body>
+</html>

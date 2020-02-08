@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex 3</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt veritatis totam nulla eligendi, veniam et ex qui, rem ipsum nobis doloremque sint accusantium. Illo animi iste, minus reiciendis nemo distinctio suscipit quasi deleniti quod vitae provident ea quam perspiciatis, optio nobis architecto, alias quaerat ab accusantium mollitia obcaecati dolores? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem tenetur beatae veniam, dolor, quos ad eos commodi aliquid ullam quasi!</p>
+	<button>Show</button>
+	<button>Hide</button>
+	<button>Toggel</button>
+	<button>Slide Down</button>
+	<button>Slide Up</button>
+	<button>Slide Toggle</button>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('button').eq(0).on('click', function(){
+				$('p').show();
+			});
+			$('button').eq(1).on('click', function(){
+				$('p').hide();
+			});
+			$('button').eq(2).on('click', function(){
+				$('p').toggle();
+			});
+			$('button').eq(3).on('click', function(){
+				$('p').slideDown(3000);
+			});
+			$('button').eq(4).on('click', function(){
+				$('p').slideUp(2000);
+			});
+			$('button').eq(5).on('click', function(){
+				$('p').slideToggle();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ex 4</title>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div style="background-color: red; position: relative;">hihi</div>
+	<div style="background-color: blue;">haha</div>
+
+	<button>Fade In</button>
+	<button>Fade Out</button>
+	<button>Animate</button>
+	<button>Stop</button>
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('button').eq(0).on('click', function(){
+				$('div').eq(0).fadeIn(3000);
+				$('div').eq(1).fadeIn('slow');
+			});
+			$('button').eq(1).on('click', function(){
+				$('div').eq(0).fadeOut(3000);
+				$('div').eq(1).fadeOut('slow');
+			});
+			$('button').eq(2).on('click', function(){
+				$('div').eq(0).animate({
+					left : '+=250px',
+					opacity : 0.2,
+					fontSize : '20px',
+				},5000);
+			});
+			$('button').eq(3).on('click', function(){
+				$('div').stop();
+			});
+		});
+	</script>
+</body>
+</html>
