@@ -1,0 +1,116 @@
+*{
+	font-family: Arial;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+#logo{
+	font-size: 18px;
+}
+.maindau{
+	background-image: url(../image/bg-masthead.jpg);
+}
+@media (max-width: 991px){
+	.navbar{
+		background-color: white;
+	}
+	#logo{
+		color: #f05f40;
+	}
+	#mauicon{
+		border: 1px solid #d8d8d8;
+		
+	}
+	#mauicon2{
+		color: #d8d8d8;
+	}
+}
+@media (min-width: 991px) {
+	#hihi{
+	    right: 0;
+    	position: absolute;
+    	margin-right: 10%;
+	}
+	.navbar-brand{
+	    margin-left: 10%;
+	}
+}
+.tieude{
+	text-align: center;
+	color: white;
+	margin-top: 100px;
+	font-weight: bold;
+}
+.gachchu{
+	width: 50px;
+	display: inline-block;
+}
+.row{
+	text-align: center;
+}
+.chup{
+	margin-top: 4%;
+	color: white;
+}
+.button1{
+	padding: 12px;
+	border-radius: 30px;
+	background-color: #f05f40;
+	color: white;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 14px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 70px;
+}
+.button2{
+	padding: 12px;
+	border-radius: 30px;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	display: inline-block;
+	font-size: 14px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-bottom: 70px;
+}
+.tieude2{
+	color: white;
+	margin-top: 100px;
+}
+.tieude3{
+	color: black;
+	margin-top: 100px;
+}
+.divicon{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.divicon>i{
+	color: #f05f40;
+	font-size: 50px;
+}
+.divicon>h4{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.divicon>p{
+	font-size: 14px;
+	line-height: 20px;
+}
+img{
+	width: 107%;
+}
+.chup2{
+	margin-top: 4%;
+}
+.lienhe{
+	margin-top: 10px;
+}
+.lienhe>i{
+	font-size: 50px;
+	margin-bottom: 10px;
+}
