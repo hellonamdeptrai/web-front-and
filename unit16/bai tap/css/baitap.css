@@ -14,12 +14,18 @@
 	font-size: 12px;
 	font-weight: bold;
 }
-#mauchumenu{
-	color: white;
-}
 .kichhoat{
 	color: #ff7200;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #ff7200;
+	transition: .5s;
+}
+.kichhoat>#mauchumenu{
+	color: #ff7200;
+	font-weight: bold;
+}
+#mauchumenu{
+	color: white;
+	transition: .5s;
 }
 .maumenu{
 	background-color: red;
@@ -488,7 +494,7 @@
 	height: 100%;
 	background-color: #ff7200;
 }
-.bamanh{
+.bamanh>a{
 	font-weight: bold;
 	font-size: .7rem;
 	margin-bottom: 25px;
@@ -496,10 +502,19 @@
 	cursor: pointer;
 	color: black;
 	text-decoration: none;
+	display: block;
+	transition: .5s;
 }
-.bamanh:hover{
+.bamanh:hover a{
 	color: #ff7200;
 	text-decoration: none;
+}
+.card{
+    position: relative;
+}
+.card-head{
+    position: relative;
+    overflow: hidden;
 }
 .donganh>div{
 	margin-bottom: 20px;
@@ -637,11 +652,11 @@
 	font-weight: bold;
 	color: white;
 }
-#thanhtieude2{
+#thanhtieude3{
 	width: 80%;
 	height: 2px;
 }
-#thanhtieude2>.progress-bar{
+#thanhtieude3>.progress-bar{
 	background-color: #ff7200;
 }
 .thogtinthem>div>p{
@@ -667,6 +682,7 @@
 	border: none;
 	outline: none;
 	background-color: #262420;
+	color: white;
 }
 .otimkiem>span{
 	color: white;
@@ -696,11 +712,6 @@
 	color: #ff7200;
 	border: 1px solid #ff7200;
 }
-
-
-
-
-
 
 
 

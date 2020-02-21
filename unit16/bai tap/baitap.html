@@ -17,6 +17,7 @@
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.nav.js"></script>
 </head>
 <body>
 	<div class="maindau">
@@ -38,16 +39,16 @@
 						        <a class="nav-link" id="mauchumenu" href="#services">SERVICES</a>
 						    </li>
 						    <li class="nav-item">
-						   	  	<a class="nav-link" id="mauchumenu" href="#">TEAMS</a>
+						   	  	<a class="nav-link" id="mauchumenu" href="#teams">TEAMS</a>
 						    </li>
 						    <li class="nav-item">
-						   	  	<a class="nav-link" id="mauchumenu" href="#">WORKS</a>
+						   	  	<a class="nav-link" id="mauchumenu" href="#workss">WORKS</a>
 						    </li>
 						    <li class="nav-item">
-						   	  	<a class="nav-link" id="mauchumenu" href="#">TESTIMONIAL</a>
+						   	  	<a class="nav-link" id="mauchumenu" href="#testimonial">TESTIMONIAL</a>
 						    </li>
 						    <li class="nav-item">
-						   	  	<a class="nav-link" id="mauchumenu" href="#">CONTACT</a>
+						   	  	<a class="nav-link" id="mauchumenu" href="#contactt">CONTACT</a>
 						    </li>
 						    <li class="nav-item">
 						   	  	<a class="nav-link" id="mauchumenu" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
@@ -514,7 +515,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container" id="teams">
 		<div class="ther2">
 			<h5 class="tieudecon">THER SERVICES</h5>
 		  	<div class="progress" id="thanhtieude">
@@ -682,7 +683,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container" id="workss">
 		<div class="row">
 			<div class="col-xl-6 col-lg6 col-md6 col-sm-6 col-12" id="centertieude">
 				<h5 class="tieudecon">LATEST PROJECT</h5>
@@ -691,25 +692,25 @@
 				</div>
 			</div>
 			<div class="col-xl-6 col-lg6 col-md6 col-sm-6 col-12">
-				<ul class="row nav nav-pills" style="list-style: none;">
-					<li class="col-3 nav-item">
-						<a class="bamanh active" data-toggle="tab" href="#showall" role="tab" aria-selected="true">
-							<p>SHOW ALL</p>
+				<ul class="filters row" style="list-style: none;">
+					<li class="col-3 bamanh active" data-filter="*">
+						<a href="#!">
+							SHOW ALL
 						</a>
 					</li>
-					<li class="col-3 nav-item">
-						<a class="bamanh" data-toggle="tab" href="#graphy" role="tab" aria-selected="true">
-							<p>PHOTOGRAPHY</p>
+					<li class="col-3 bamanh" data-filter=".html">
+						<a href="#!">
+							PHOTOGRAPHY
 						</a>
 					</li>
-					<li class="col-3 nav-item">
-						<a class="bamanh" data-toggle="tab" href="#ding" role="tab" aria-selected="true">
-							<p>BRANDING</p>
+					<li class="col-3 bamanh" data-filter=".css">
+						<a href="#!">
+							BRANDING
 						</a>
 					</li>
-					<li class="col-3 nav-item">
-						<a class="bamanh" data-toggle="tab" href="#grades" role="tab" aria-selected="true">
-							<p>GRAPHIC DESIGN</p>
+					<li class="col-3 bamanh" data-filter=".javascript">
+						<a href="#!">
+							GRAPHIC DESIGN
 						</a>
 					</li>
 				</ul>
@@ -720,345 +721,177 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="tab-content">
-  			<div class="tab-pane fade show active" id="showall">
-  				<div class="row">
-					<div class="col-4">
-						<div class="donganh">
-							<div>
-								<img class="w-100" src="image/pf1.jpg" alt="">
+		<div class="projects">
+            <div class="row">
+                <div class="col-4 item html">    
+                    <div class="card" style="border: none;">
+                        <div class="card-head">
+                            <div class="donganh">
 								<div>
+									<img class="w-100" src="image/pf1.jpg" alt="">
 									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div>
+									<img class="w-100" src="image/pf2.jpg" alt="">
+									<div>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div>
-								<img class="w-100" src="image/pf2.jpg" alt="">
-								<div>
+                      	</div>          
+                    </div>
+                </div>
+                <div class="col-4 item css">    
+                    <div class="card" style="border: none;">
+                        <div class="card-head">
+                            <div class="donganh">
+                            	<div>
+									<img class="w-100" src="image/pf3.jpg" alt="">
 									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div>
+									<img class="w-100" src="image/pf1.jpg" alt="">
+									<div>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div>
-								<img class="w-100" src="image/pf3.jpg" alt="">
+                      	</div>          
+                    </div>
+                </div>
+                <div class="col-4 item javascript">    
+                    <div class="card" style="border: none;">
+                        <div class="card-head">
+                            <div class="donganh">
 								<div>
+									<img class="w-100" src="image/pf6.jpg" alt="">
 									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div>
+									<img class="w-100" src="image/pf2.jpg" alt="">
+									<div>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div>
-								<img class="w-100" src="image/pf4.jpg" alt="">
+                      	</div>          
+                    </div>
+                </div>
+                <div class="col-4 item html">    
+                    <div class="card" style="border: none;">
+                        <div class="card-head">
+                            <div class="donganh">
 								<div>
+									<img class="w-100" src="image/pf6.jpg" alt="">
 									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div>
+									<img class="w-100" src="image/pf7.jpg" alt="">
+									<div>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div>
+									<img class="w-100" src="image/pf4.jpg" alt="">
+									<div>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="donganh">
-							<div>
-								<img class="w-100" src="image/pf8.jpg" alt="">
+                      	</div>          
+                    </div>
+                </div>
+                <div class="col-4 item html">    
+                    <div class="card" style="border: none;">
+                        <div class="card-head">
+                            <div class="donganh">
 								<div>
+									<img class="w-100" src="image/pf3.jpg" alt="">
 									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div>
-								<img class="w-100" src="image/pf9.jpg" alt="">
+                      	</div>          
+                    </div>
+                </div>
+                <div class="col-4 item css">    
+                    <div class="card" style="border: none;">
+                        <div class="card-head">
+                            <div class="donganh">
 								<div>
+									<img class="w-100" src="image/pf1.jpg" alt="">
 									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div>
+									<img class="w-100" src="image/pf2.jpg" alt="">
+									<div>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
+									</div>
+								</div>
+								<div>
+									<img class="w-100" src="image/pf5.jpg" alt="">
+									<div>
+										<div>
+											<i class="fa fa-link" aria-hidden="true"></i>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div>
-								<img class="w-100" src="image/pf5.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="donganh">
-							<div>
-								<img class="w-100" src="image/pf6.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf7.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf6.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf7.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-  			</div>
-  			<div class="tab-pane fade" id="graphy">
-  				<div class="row">
-					<div class="col-4">
-						<div class="donganh">
-							<div>
-								<img class="w-100" src="image/pf1.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf2.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf3.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf4.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="donganh">
-							<div>
-								<img class="w-100" src="image/pf5.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf6.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf7.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="donganh">
-							<div>
-								<img class="w-100" src="image/pf9.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf6.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf7.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-  			</div>
-  			<div class="tab-pane fade" id="ding">
-  				<div class="row">
-					<div class="col-4">
-						<div class="donganh">
-							<div>
-								<img class="w-100" src="image/pf5.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf2.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="donganh">
-							<div>
-								<img class="w-100" src="image/pf6.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf3.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf6.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-  			</div>
-  			<div class="tab-pane fade" id="grades">
-  				<div class="row">
-					<div class="col-4">
-						<div class="donganh">
-							<div>
-								<img class="w-100" src="image/pf2.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf8.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf4.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="donganh">
-							<div>
-								<img class="w-100" src="image/pf7.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-							<div>
-								<img class="w-100" src="image/pf9.jpg" alt="">
-								<div>
-									<div>
-										<i class="fa fa-link" aria-hidden="true"></i>
-										<i class="fa fa-search" aria-hidden="true"></i>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-  			</div>
-		</div>
+                      	</div>          
+                    </div>
+                </div>
+            </div>
+        </div>
 	</div>
-	<div class="anhlike">
+	<div class="anhlike" id="testimonial">
 		<div class="xamtrongsuat">
 			<div class="container" style="padding-top: 80px; padding-bottom: 80px;">
 				<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
@@ -1129,7 +962,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container" id="contactt">
 		<div class="row" style="margin-bottom: 100px;">
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<h5 class="tieudecon" style="margin-top: 100px;">CONTACT INFO</h5>
@@ -1238,7 +1071,7 @@
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
 					<div class="thogtinthem">
 						<h6 class="tieudecon2">SITEMAP</h6>
-					  	<div class="progress" id="thanhtieude2">
+					  	<div class="progress" id="thanhtieude3">
 					  		<div class="progress-bar" role="progressbar" style="width: 30%"></div>
 						</div>
 						<div>
@@ -1252,7 +1085,7 @@
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
 					<div class="thogtinthem">
 						<h6 class="tieudecon2">ACHIVES</h6>
-					  	<div class="progress" id="thanhtieude2">
+					  	<div class="progress" id="thanhtieude3">
 					  		<div class="progress-bar" role="progressbar" style="width: 30%"></div>
 						</div>
 						<div>
@@ -1266,7 +1099,7 @@
 				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
 					<div class="thogtinthem">
 						<h6 class="tieudecon2">NEWSLETTER</h6>
-					  	<div class="progress" id="thanhtieude2">
+					  	<div class="progress" id="thanhtieude3">
 					  		<div class="progress-bar" role="progressbar" style="width: 30%"></div>
 						</div>
 						<p>Sign uo for our mailing list to gat latest updates and offers.</p>
@@ -1303,6 +1136,7 @@
 
 
 
+	<!-- nút bấm cuộn lên đầu trang -->
 	<div class="btn-top">
 		<i class="fa fa-chevron-up" aria-hidden="true"></i>
 	</div>
@@ -1362,9 +1196,25 @@
 		});
   	</script>
 
+	<!-- wow -->
   	<script type="text/javascript">
   		new WOW().init();
   	</script>
+	
+	<!-- menu scroll -->
+	<script type="text/javascript">
+		$('#chumenu').onePageNav({
+			currentClass: 'kichhoat',
+			changeHash: false,
+			scrollSpeed: 750,
+			scrollThreshold: 0.5,
+			filter: '',
+			easing: 'swing'
+		});
+	</script>
 
+	<!-- cháo ảnh -->
+	<script src="../js/isotope.min.js"></script>
+	<script src="../js/script.js"></script> 
 </body>
 </html>
