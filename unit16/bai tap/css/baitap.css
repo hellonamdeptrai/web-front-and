@@ -619,23 +619,8 @@
 .frmdangnhap>div>div>input{
 	margin-bottom: 20px;
 }
-.bando{
-	background-image: url(../image/mapbg.jpg);
-	background-size: cover;
-}
-.bando>div{
-	background-color: #ff7200b3;
-	text-align: center;
-	color: white;
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
-.bando>div>i{
-	font-size: 35px;
-	margin-bottom: 10px;
-}
-.bando>div>h3{
-	font-weight: bold;
+.bando>iframe{
+	width: 100%;
 }
 .thogtinthem{
 	margin-top: 50px;
